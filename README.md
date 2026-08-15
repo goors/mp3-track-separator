@@ -8,6 +8,7 @@ Designed for musicians, producers, and creators who need a fast, local tool for 
 
 ### 📥 Download App
 * 👉 **[Download for Apple Silicon (macOS)](https://github.com/goors/mp3-track-separator/releases/download/1.0.2/Track.separator_1.0.2_aarch64.dmg)**
+* 👉 **[Download for Intel (macOS)](https://github.com/goors/mp3-track-separator/releases/download/1.0.2/Track.separator_1.0.2_universal.dmg)**
 * Or view all versions on the [GitHub Releases Page](https://github.com/goors/mp3-track-separator/releases/latest).
 
 ---
