@@ -6,6 +6,12 @@ Designed for musicians, producers, and creators who need a fast, local tool for 
 
 ---
 
+### 📥 Download App
+* 👉 **[Download for Apple Silicon (macOS)](https://github.com/goors/mp3-track-separator/releases/download/1.0.2/Track.separator_1.0.2_aarch64.dmg)**
+* Or view all versions on the [GitHub Releases Page](https://github.com/goors/mp3-track-separator/releases/latest).
+
+---
+
 ![App Screenshot](screenshot.png)
 
 ## Supported platforms
@@ -41,9 +47,8 @@ Make sure you have the following installed on your machine:
 * **Node.js** (v18+)
 * **Rust** (Latest stable toolchain)
 
-## External Binaries Required
+---
 
-Because of file size limits, the required external binaries (`ffmpeg`, `ffprobe`, `yt-dlp`, and `shredder`) are not included in this repository. You need to download them and place them into the `src-tauri/binaries/` folder before building or running the app.
 ## External Binaries Required
 
 Because of file size limits, the required external binaries (`ffmpeg`, `ffprobe`, `yt-dlp`, and `shredder`) are not included in the source repository. You can download pre-compiled versions directly from the [GitHub Releases Page](https://github.com/goors/mp3-track-separator/releases/latest) and place them into the `src-tauri/binaries/` folder.
@@ -57,4 +62,3 @@ src-tauri/
     ├── ffprobe
     ├── yt-dlp
     └── shredder
-
