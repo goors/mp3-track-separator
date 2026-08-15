@@ -44,14 +44,12 @@ Make sure you have the following installed on your machine:
 ## External Binaries Required
 
 Because of file size limits, the required external binaries (`ffmpeg`, `ffprobe`, `yt-dlp`, and `shredder`) are not included in this repository. You need to download them and place them into the `src-tauri/binaries/` folder before building or running the app.
+## External Binaries Required
 
-### Required Binaries:
-1. **FFmpeg & FFprobe:** Download the official static builds for macOS from [FFmpeg Builds](https://evermeet.cx/ffmpeg/) (or use Homebrew: `brew install ffmpeg`).
-2. **yt-dlp:** Download the latest binary from the [yt-dlp releases page](https://github.com/yt-dlp/yt-dlp).
-3. **Shredder / Demucs binaries:** Place your compiled platform-specific runner inside the folder.
+Because of file size limits, the required external binaries (`ffmpeg`, `ffprobe`, `yt-dlp`, and `shredder`) are not included in the source repository. You can download pre-compiled versions directly from the [GitHub Releases Page](https://github.com/goors/mp3-track-separator/releases/latest) and place them into the `src-tauri/binaries/` folder.
 
 ### Directory Structure
-Ensure your `src-tauri/binaries/` directory looks like this:
+Ensure your `src-tauri/binaries/` directory looks like this before building or running:
 ```text
 src-tauri/
 └── binaries/
@@ -59,11 +57,4 @@ src-tauri/
     ├── ffprobe
     ├── yt-dlp
     └── shredder
-    
-### Installation
-
-1. Clone the repository:
-   ```bash
-   pnpm install
-   pnpm tauri dev
 
