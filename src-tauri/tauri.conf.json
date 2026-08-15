@@ -1,0 +1,36 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Track separator",
+  "version": "1.0.2",
+  "identifier": "org.pregmatch.demucs",
+  "build": {
+    "frontendDist": "../out",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build:tauri"
+  },
+  "app": {
+    "windows": [
+
+    ],
+    "security": {
+      "csp": null
+
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/icon.png"
+    ],
+    "resources": [
+      "binaries/yt-dlp",
+      "binaries/ffmpeg",
+      "binaries/shredder",
+      "binaries/ffprobe"
+    ]
+  }
+}
+

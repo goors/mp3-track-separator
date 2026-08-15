@@ -1,0 +1,96 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": ["main", "shred-*"],
+  "permissions": [
+    "core:default",
+    "core:tray:default",
+    "core:event:default",
+    "core:window:allow-show",
+    "core:window:allow-set-focus",
+    "opener:default",
+    "dialog:allow-open",
+    "notification:allow-is-permission-granted",
+    "notification:allow-request-permission",
+    "notification:allow-send-notification",
+    "websocket:allow-connect",
+    "websocket:default",
+    "core:window:allow-close",
+    "event:allow-listen",
+    "event:allow-emit",
+    "event.listen",
+    "sql:allow-load",
+    "sql:allow-execute",
+    "sql:allow-select",
+    {
+      "identifier": "sql:allow-load",
+      "allow": [{ "db": "sqlite:notifications.db" }]
+    },
+    "http:default",
+    {
+      "identifier": "http:allow-fetch",
+      "allow": [
+        { "url": "http://localhost:9527/*" },
+        { "url": "https://it.gemdat.ch/*" },
+        { "url": "https://gemdat.mocoapp.com/*" }
+      ]
+    },
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [
+        { "url": "https://translate.google.com/*" },
+        { "url": "https://*.google.com/*" }
+      ]
+    },
+    "shell:allow-open",
+    {
+      "identifier": "shell:allow-open",
+      "allow": [{ "schemes": ["http", "https", "mailto"] }]
+    },
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "path": "binaries/yt-dlp",
+          "args": true
+        },
+        {
+          "path": "binaries/shredder",
+          "args": true
+        },
+        {
+          "path": "binaries/ffmpeg",
+          "args": true
+        }
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "identifier": "default",
+      "description": "default capability for windows",
+      "windows": ["main", "shred-*"],
+      "permissions": [
+        "core:default",
+        "core:tray:default",
+        "core:window:allow-show",
+        "core:window:allow-set-focus",
+        "core:window:allow-close",
+        "notification:allow-is-permission-granted",
+        "notification:allow-request-permission",
+        "websocket:allow-connect",
+        "websocket:default",
+        "dialog:allow-open",
+        "sql:allow-load",
+        "sql:allow-execute",
+        "sql:allow-select",
+        "shell:allow-open",
+        {
+          "identifier": "sql:allow-load",
+          "allow": [{ "db": "sqlite:notifications.db" }]
+        }
+      ]
+    }
+  ]
+}
