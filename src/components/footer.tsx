@@ -1,6 +1,6 @@
 "use client";
 
-import { Activity, Cpu, HardDrive, Zap, Loader2 } from "lucide-react";
+import { Activity, Cpu, HardDrive, Zap } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
 
