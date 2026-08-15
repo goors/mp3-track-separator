@@ -31,9 +31,7 @@
     {
       "identifier": "http:allow-fetch",
       "allow": [
-        { "url": "http://localhost:9527/*" },
-        { "url": "https://it.gemdat.ch/*" },
-        { "url": "https://gemdat.mocoapp.com/*" }
+        { "url": "http://localhost:9527/*" }
       ]
     },
     {
